@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-
+import { ModeToggle } from '@/components/ui/mode-toggle';
 const HomePage = () => {
   return (
     <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
@@ -43,6 +43,8 @@ const HomePage = () => {
               </ul>
               <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online. This is the updated text.</p>
               <Button className='bg-green-300 hover:bg-red-500' variant={"secondary"}> Click here </Button>
+              <p> </p>
+               <ModeToggle />
             </div>
             <div className="pt-8 text-base font-semibold leading-7">
               <p className="text-gray-900">Want to dig deeper into Tailwind?</p>

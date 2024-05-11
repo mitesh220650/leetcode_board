@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@/components/ui/button';
 
 const HomePage = () => {
   return (
@@ -41,6 +42,7 @@ const HomePage = () => {
                 </li>
               </ul>
               <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online. This is the updated text.</p>
+              <Button className='bg-green-300 hover:bg-red-500' variant={"secondary"}> Click here </Button>
             </div>
             <div className="pt-8 text-base font-semibold leading-7">
               <p className="text-gray-900">Want to dig deeper into Tailwind?</p>

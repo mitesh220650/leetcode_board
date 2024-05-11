@@ -40,7 +40,7 @@ const HomePage = () => {
                   <p className="ml-4">Code completion with instant preview</p>
                 </li>
               </ul>
-              <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+              <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online. This is the updated text.</p>
             </div>
             <div className="pt-8 text-base font-semibold leading-7">
               <p className="text-gray-900">Want to dig deeper into Tailwind?</p>

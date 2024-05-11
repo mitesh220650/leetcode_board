@@ -1,6 +1,7 @@
+
 .site-header {
     background-color: #333;
-    color: #fff;
+    color: #f8f0f0;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -8,7 +9,12 @@
 }
 
 .site-header .logo {
-    font-size: 24px;
+    font-size: 48px;
+}
+
+.site-header .logo img {
+    width: 200px; 
+    height: auto; 
 }
 
 .site-header nav ul {

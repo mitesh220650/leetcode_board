@@ -19,7 +19,7 @@ const HomePage = () => {
                   </svg>
                   <p className="ml-4">
                     Customizing your
-                    <code className="text-sm font-bold text-gray-900">tailwind.config.js</code> file
+                    <code className="text-sm font-bold text-gray-900"> tailwind.config.js</code> file
                   </p>
                 </li>
                 <li className="flex items-center">
@@ -29,7 +29,7 @@ const HomePage = () => {
                   </svg>
                   <p className="ml-4">
                     Extracting classes with
-                    <code className="text-sm font-bold text-gray-900">@apply</code>
+                    <code className="text-sm font-bold text-gray-900"> @apply</code>
                   </p>
                 </li>
                 <li className="flex items-center">

@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LeetCode Board",
-  description: "Online Whiteboardin for LeetCode Problems",
+  description: "Online Whiteboarding for LeetCode Problems",
 };
 
 export default function RootLayout({

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/ui/theme-provide"
+import { SiteHeader } from "@/components/ui/header/site-header"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -23,8 +24,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {" "}
-          {children}{" "}
+          <SiteHeader /> {children}{" "}
         </ThemeProvider>
       </body>
     </html>

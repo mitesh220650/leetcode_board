@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css';
 import { Button } from '../button';
 import { ModeToggle } from '../mode-toggle';
-import Logo from '/Users/miteshwandhare/Desktop/leetcode_board/src/components/ui/header/LeetCode_Logo_black_with_text.svg.png' 
+import Logo from './ui/header/LeetCode_Logo_black_with_text.svg.png';
 const Header: React.FC = () => {
     return (
         <header className="site-header">

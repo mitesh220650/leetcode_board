@@ -8,7 +8,7 @@ const HomePage = () => {
       <main className="flex-grow flex flex-col justify-center overflow-hidden py-6 sm:py-12 relative">
         <div className="flex items-center justify-center">
           <div className="flex flex-row items space-x-4">
-            <Button>Hello World</Button>
+            <Button>This is a new page.</Button>
             <ModeToggle />
           </div>
         </div>

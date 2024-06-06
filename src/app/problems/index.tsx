@@ -11,4 +11,4 @@ const HomePage = () => {
   )
 }
 
-export defa
+export default HomePage

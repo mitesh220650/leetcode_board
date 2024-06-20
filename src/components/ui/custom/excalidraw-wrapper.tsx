@@ -5,7 +5,7 @@ import { Excalidraw, convertToExcalidrawElements } from "@excalidraw/excalidraw"
 
 const ExcalidrawWrapper: React.FC = () => {
   return (
-    <div style={{ height: "h-screen", width: "w-screen" }}>
+    <div style={{ height: "500px", width: "500px" }}>
       <Excalidraw />
     </div>
   )

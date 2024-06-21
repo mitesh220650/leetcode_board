@@ -1,6 +1,16 @@
-.excalidraw-container{
-    height: calc(100vh - 3.5rem);
-    position: relative;
-    z-index: 20;
-    overflow: auto;
+/* custom/excalidraw.css */
+
+.excalidraw-container {
+    height: calc(100vh - 3.5rem); /* Adjust for header height */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.excalidraw-container.light {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.excalidraw-container.dark {
+    background-color: var(--background);
+    color: var(--foreground);
 }

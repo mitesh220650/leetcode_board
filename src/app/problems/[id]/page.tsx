@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic"
+import { ThemeProvider } from "next-themes"
 
 const ExcalidrawWrapper = dynamic(
   async () =>
@@ -12,7 +13,9 @@ export default function Problems() {
   return (
     <main>
       <div>
+        <ThemeProvider>
       <ExcalidrawWrapper />
+        </ThemeProvider>
       </div>
     </main>
   )

@@ -57,7 +57,7 @@ export function LeetCodeForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">Go</Button>
+        <Button type="submit" className = "outline">Go</Button>
       </form>
     </Form>
   )

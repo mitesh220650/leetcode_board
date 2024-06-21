@@ -11,7 +11,9 @@ const ExcalidrawWrapper = dynamic(
 export default function Problems() {
   return (
     <main>
+      <div>
       <ExcalidrawWrapper />
+      </div>
     </main>
   )
 }

@@ -1,11 +1,11 @@
 "use client"
 import { Excalidraw, convertToExcalidrawElements } from "@excalidraw/excalidraw"
-
+import "../../../components/ui/custom/excalidraw.css"
 // import "@excalidraw/excalidraw/index.css"
 
 const ExcalidrawWrapper: React.FC = () => {
   return (
-    <div style={{ height: "500px", width: "500px" }}>
+    <div className="excalidraw-container">
       <Excalidraw />
     </div>
   )

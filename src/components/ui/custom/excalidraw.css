@@ -1,0 +1,6 @@
+.excalidraw-container{
+    height: calc(100vh - 3.5rem);
+    position: relative;
+    z-index: 20;
+    overflow: auto;
+}

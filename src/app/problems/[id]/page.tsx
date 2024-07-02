@@ -14,7 +14,8 @@ export default function Problems() {
     <main>
       <div>
         <ThemeProvider>
-      <ExcalidrawWrapper />
+      <ExcalidrawWrapper>
+      </ExcalidrawWrapper>
         </ThemeProvider>
       </div>
     </main>

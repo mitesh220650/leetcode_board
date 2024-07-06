@@ -1,27 +1,36 @@
 "use client"
 import React, { useEffect, useState } from "react";
 
-import { Excalidraw, MainMenu, WelcomeScreen } from "@excalidraw/excalidraw"
+import { Excalidraw, getSceneVersion, MainMenu, WelcomeScreen } from "@excalidraw/excalidraw"
 import {serializeAsJSON} from "@excalidraw/excalidraw"
 import { useTheme } from "next-themes";
 import "../../../components/ui/custom/excalidraw.css";
 import { AppState, BinaryFiles } from "@excalidraw/excalidraw/types/types"
 import { ExcalidrawElement } from "@excalidraw/excalidraw/types/element/types"
 
-const ExcalidrawWrapper: React.FC = () => {
+interface ExcalidrawWrapperProps {
+  identifier : string
+}
+
+const ExcalidrawWrapper: React.FC<ExcalidrawWrapperProps> = ({identifier}) => {
   const { theme } = useTheme();
+  let lastSceneVersion = -1
   const onchange = (
     elements: readonly ExcalidrawElement[],
     appState: AppState,
     files: BinaryFiles
   )  => {
-    console.log("function invoked");
-    const content = serializeAsJSON(elements, appState, files, "local")
-    localStorage.setItem("excalidraw", content);
+    const sceneVersion = getSceneVersion(elements)
+    if(sceneVersion > lastSceneVersion){
+      console.log("perssited to local storage")
+      const content = serializeAsJSON(elements, appState, files, "local")
+      localStorage.setItem("excalidraw" + "_" + identifier, content)
+      lastSceneVersion = sceneVersion
+    }
   }
 
   const retrieveInitialData = () => {
-    const content = localStorage.getItem("excalidraw")
+    const content = localStorage.getItem("excalidraw" + "_" + identifier)
     if(content != null) {
       return JSON.parse(content)
     }

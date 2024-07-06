@@ -10,12 +10,12 @@ const ExcalidrawWrapper = dynamic(
 )
 
 export default function Problems() {
+  const identifier = "hello"
   return (
     <main>
       <div>
         <ThemeProvider>
-      <ExcalidrawWrapper>
-      </ExcalidrawWrapper>
+      <ExcalidrawWrapper identifier = {identifier}/>
         </ThemeProvider>
       </div>
     </main>

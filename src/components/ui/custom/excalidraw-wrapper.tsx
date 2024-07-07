@@ -22,7 +22,7 @@ const ExcalidrawWrapper: React.FC<ExcalidrawWrapperProps> = ({identifier}) => {
   )  => {
     const sceneVersion = getSceneVersion(elements)
     if(sceneVersion > lastSceneVersion){
-      console.log("perssited to local storage")
+      console.log("persisted to local storage")
       const content = serializeAsJSON(elements, appState, files, "local")
       localStorage.setItem("excalidraw" + "_" + identifier, content)
       lastSceneVersion = sceneVersion

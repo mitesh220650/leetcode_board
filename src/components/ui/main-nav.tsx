@@ -17,6 +17,15 @@ export function MainNav() {
         </span>
       </Link>
       <nav className="flex items-center gap-4 text-sm lg:gap-6">
+          <Link
+              href="/explore"
+              className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname === "/docs" ? "text-foreground" : "text-foreground/60"
+              )}
+          >
+              Explore
+          </Link>
         <Link
           href="/problems"
           className={cn(
@@ -26,6 +35,24 @@ export function MainNav() {
         >
           Problems
         </Link>
+          <Link
+              href="https://leetcode.com/contest/"
+              className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname === "/docs" ? "text-foreground" : "text-foreground/60"
+              )}
+          >
+              Contests
+          </Link>
+          <Link
+              href="https://leetcode.com"
+              className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname === "/docs" ? "text-foreground" : "text-foreground/60"
+              )}
+          >
+              LeetCode
+          </Link>
       </nav>
     </div>
   )

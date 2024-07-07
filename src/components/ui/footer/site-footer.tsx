@@ -7,12 +7,21 @@ export function SiteFooter() {
         <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
           Built by{" "}
           <a
-            href={siteConfig.links.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium underline underline-offset-4"
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline underline-offset-4"
           >
             mitesh
+          </a>{" "}
+           mentored by{" "}
+          <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline underline-offset-4"
+          >
+            Adaptatron
           </a>
         </p>
       </div>

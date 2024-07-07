@@ -19,8 +19,7 @@ const Explore = () => {
                     <ul className="list-disc list-inside text-gray-800">
                         <li className="mb-4">
                             <strong>Brainstorm and Visualize Solutions:</strong> Enhance your problem-solving process by
-                            utilizing LC
-                            Board's interactive whiteboard. Visualize and brainstorm solutions directly alongside
+                            utilizing LC Board interactive whiteboard. Visualize and brainstorm solutions directly alongside
                             LeetCode problems.
                         </li>
                         <li className="mb-4">
